@@ -10,13 +10,18 @@ public class Assignment {
          _topic =  topic;
     }
 
-    public void SetTopic(string topic)
+    public string GetTopic()
     {
-        _topic=topic;
+        return _topic;
     }
 
     public string GetSummary()
     {
         return $"{_studentName} - {_topic}";
+    }
+
+    public string GetStudentName()
+    {
+        return _studentName;
     }
 }
